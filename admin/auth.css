@@ -21,10 +21,11 @@ body {
     margin-top: 0;
     text-align: center;
     text-transform: uppercase;
-    color: #555; 
+    color: #555;
 }
 
 .form-control {
+    position: relative;
     width: 100%;
     height: auto;
     box-sizing: border-box;
@@ -48,11 +49,10 @@ input[type="password"] {
 
 .button-wrapper {
     text-align: center;
-}  
+}
 
 .button {
-    width: 32%;
-    height: auto;
+    width: 33%;
     padding: 10px 20px;
     border: 0px;
     border-radius: 20px;
