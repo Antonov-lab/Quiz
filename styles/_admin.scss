@@ -1,0 +1,91 @@
+@import "variables";
+
+.lb {
+  margin-bottom: 0.5rem;
+}
+
+.link-decoration {
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    text-decoration: none;
+    color: #3B507D;
+  }
+}
+
+.heading-general {
+  font-size: 36px;
+  margin: 40px 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.edit-list-container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-list-form-control {
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+}
+
+.actions {
+  margin-bottom: 40px;
+}
+
+.fa-edit {
+  color: #000000;
+}
+
+.signin-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 6px;
+  background-color: $color-white;
+}
+
+.heading {
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-font;
+}
+
+.auth-form-control {
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.signin-form
+input[type="email"] {
+  margin-bottom: -1px;
+}
+
+.signin-form
+input[type="password"] {
+  margin-bottom: 15px;
+}
+
+.checkbox {
+  margin-bottom: 20px;
+  color: $color-checkbox;
+}

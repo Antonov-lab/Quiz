@@ -1,0 +1,17 @@
+@import "../mixins";
+
+.auth-body {
+  @include set-default-body-properties;
+
+  display: flex;
+  align-items: center;
+}
+
+.question-body {
+  @include set-default-body-properties;
+}
+
+.edit-list-body {
+  @include set-default-body-properties;
+  text-align: left;
+}

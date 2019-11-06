@@ -1,0 +1,13 @@
+@import "variables";
+
+@mixin set-default-body-properties {
+  margin: 0;
+  min-height: 100vh;
+  background-color: $color-body;
+}
+
+@mixin set-default-back-next-button-properties {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 15px;
+}

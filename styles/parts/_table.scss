@@ -1,0 +1,17 @@
+@import "../variables";
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid $color-table-darkBlue;
+  }
+
+  th, td {
+    padding: .75rem;
+    border-top: 1px solid $color-table-black;
+    vertical-align: top;
+  }
+}
