@@ -10,7 +10,7 @@
   background-color: $color-navbar;
 
   .navbar-brand {
-    display: inline-block;
+    display: inline-block; // inline-block такое-себе, с флексами выглядит как-то сомнительно, предполагаю делает ничего
     font-size: 1.3rem;
   }
 
@@ -18,12 +18,12 @@
     display: flex;
     list-style: none;
     flex-wrap: wrap;
-    padding: 0;
+    padding: 0; //  это будет копипастой для всех ul внури nav, что намекает на создание reset.scss в котором сам описывашь мол nav ul {padding: 0}
   }
 
   .nav-link {
     display: block;
-    padding-right: .5rem;
+    padding-right: .5rem; // почему паддинги часть ссылок? они у тебя не выглядят как блоки с высотой какой-то, т.е. кликабельная область не очень ясна, зачем тогда давать кликать мимо ссылки
     padding-left: .5rem;
     font-size: 1.2rem;
   }

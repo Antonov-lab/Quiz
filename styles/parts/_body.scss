@@ -1,5 +1,6 @@
 @import "../mixins";
 
+// да, миксины вполне себе хороши
 .auth-body {
   @include set-default-body-properties;
 

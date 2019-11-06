@@ -1,4 +1,5 @@
 <!doctype html>
+<!--а здесь lang=en при использовании русских надписей, такое себе-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +7,9 @@
     <link rel="stylesheet" href="../../styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 
+<!--    крайне советую использовать в качестве cdn если не свой собственный на каком-нибудь амазоне, то только cdnjs сайт для всех зависимостей-->
+<!--    по простой причине, этот бандл может вполне накрыться, этого не надо, по хорошему я бы поместил и шрифты и normalize в папку vendor в сам проект,-->
+<!--    а то у меня сча очень долго иконки подгружались, фу таким быть сидиэном-->
     <script src="https://kit.fontawesome.com/cc96766141.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -39,6 +43,7 @@
     <table class="table">
         <thead>
         <tr>
+            <!--зачем scope нужен, что он даёт конкретно в этой таблице?-->
             <th scope="col">#</th>
             <th scope="col">Вопрос</th>
             <th scope="col">Действия</th>

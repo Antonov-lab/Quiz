@@ -1,3 +1,4 @@
+// уже подключено в style.scss, зачем здесь?
 @import "../variables";
 
 .auth-button-wrapper {
@@ -10,7 +11,7 @@
 }
 
 .button {
-  width: 33%;
+  width: 33%; // плохо, неужели каждая кнопка должна быть width: 33%
   padding: 10px 20px;
   color: $color-white;
   background-color: $color-black;
@@ -18,6 +19,7 @@
   border-radius: 20px;
 }
 
+// спорный миксин всё ж, хотя идея норм, можно и просто .button-back, .button-next {...}
 .button-back {
   @include set-default-back-next-button-properties;
 
@@ -26,7 +28,7 @@
   border: 1px solid $color-black;
 
   &:hover {
-    background-color: $color-lighting;
+    background-color: $color-lighting; // можно через darken($color-white) и второй параметр донастройки
   }
 }
 
@@ -38,13 +40,16 @@
   background-color: $color-black;
 
   &:hover {
-    background-color: $color-blackout;
+    background-color: $color-blackout; // можно через lighten($color-black) и второй параметр донастройки
   }
 }
 
+// вижу копипасту с предыдущими стилями, в чем прикол?
+// плюс у тебя уже есть .button, а теперь есть ещё и .btn, это оч плохо с точки зрения запоминания
+// общие стили кладем в .btn, далее вешаем доп класс на кнопку, которая отличается от дефолтной типа .btn-primary
+// ещё я видел ты навесил это на ссылку, а значит .btn обязано быть display: inline-block или inline-flex, точно не display: inline оставаться
 .btn {
   @include set-default-back-next-button-properties;
-
   border-width: 0;
   color: $color-white;
   background-color: $color-black;
