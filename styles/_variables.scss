@@ -1,3 +1,4 @@
+// норм имена переменных
 $color-body: #f1f1f1;
 $color-btn-light: #cccccc;
 $color-btn-danger: #dc3545;
@@ -6,7 +7,8 @@ $color-checkbox: #999;
 $color-table-black: #000000;
 $color-table-darkBlue: #00004d;
 $color-font: #555;
-
+// не норм имена переменных, я бы цвета вообще не запаковывал, лучше theme-default, theme-inverse
+// и всякие primary / secondary / alert и так далее
 $color-white: #fff;
 $color-black: #333333;
 $color-blackout: #808080;

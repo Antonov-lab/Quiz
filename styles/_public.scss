@@ -1,5 +1,6 @@
 @import "variables";
 
+// это может превратиться в свалку со временем, сча норм
 .question-number {
   font-weight: 300;
   margin-top: 0;
@@ -10,7 +11,7 @@
 }
 
 .dividing-line {
-  margin: 15px 15px;
+  margin: 15px 15px; // margin: 15px
 }
 
 .question-container {
@@ -23,17 +24,18 @@
 }
 
 .question-form-control {
-  width: 100%;
+  width: 100%; // уверен, это должно быть вообще у всех контролов, типа .form-control
   box-sizing: border-box;
   padding: 8px 8px;
   border: 1px solid #ced4da;
   border-radius: 4px;
 }
 
+// плохое имя класса, видимо это был checkbox, т.к. form-check напоминает проверку валидации полей формы
 .form-check {
-  width: 100%;
+  width: 100%; // и здесь не пришлось бы так писать, если был бы .form-control
   box-sizing: border-box;
-  padding: 0.7rem 1rem 0.7rem 1rem;
+  padding: 0.7rem 1rem 0.7rem 1rem; // зачем использовать сразу px, rem, em в проекте? причем они откуда-то с потолка сча берутся с такими значениями. Лучше уж тогда всё в пикселях или полный гайдлайн описать в body и других главных тегах с заготовленными переменными
   margin-bottom: 1px;
   background-color: $color-body;
 }
